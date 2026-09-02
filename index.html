@@ -14,19 +14,36 @@
 
 
 <style>
-    /* ダークモード固定：結婚式クイズは常にライトテーマで表示 */
-    :root {
-        color-scheme: light;
-    }
-
+    /* ===== 結婚式クイズ：ダークモード完全無効化 ===== */
+    :root,
     html {
-        color-scheme: light;
-        background-color: #fffaf7;
+        color-scheme: only light !important;
+        background: #fffaf7 !important;
+        background-color: #fffaf7 !important;
     }
 
-    body {
+    html body {
+        color-scheme: only light !important;
+        background: #fffaf7 !important;
         background-color: #fffaf7 !important;
         color: #4d4642 !important;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root,
+        html,
+        body {
+            color-scheme: only light !important;
+            background: #fffaf7 !important;
+            background-color: #fffaf7 !important;
+            color: #4d4642 !important;
+        }
+
+        /* ブラウザや既存のダークモードCSSによるページ全体の暗色化を無効化 */
+        body::before,
+        body::after {
+            background-color: transparent !important;
+        }
     }
 
 * {
@@ -856,6 +873,40 @@ button {
         font-size: 21px;
     }
 }
+
+
+    /* ===== 結婚式クイズ：ダークモード完全無効化 ===== */
+    :root,
+    html {
+        color-scheme: only light !important;
+        background: #fffaf7 !important;
+        background-color: #fffaf7 !important;
+    }
+
+    html body {
+        color-scheme: only light !important;
+        background: #fffaf7 !important;
+        background-color: #fffaf7 !important;
+        color: #4d4642 !important;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root,
+        html,
+        body {
+            color-scheme: only light !important;
+            background: #fffaf7 !important;
+            background-color: #fffaf7 !important;
+            color: #4d4642 !important;
+        }
+
+        /* ブラウザや既存のダークモードCSSによるページ全体の暗色化を無効化 */
+        body::before,
+        body::after {
+            background-color: transparent !important;
+        }
+    }
+
 </style>
 </head>
 
