@@ -592,17 +592,6 @@ button {
     color: #92746b;
 }
 
-.answer-title {
-    margin: 0;
-    font-family:
-        "Hiragino Mincho ProN",
-        "Yu Mincho",
-        serif;
-    font-size: 23px;
-    line-height: 1.5;
-    color: #514942;
-}
-
 /* =========================
    正解表示
 ========================= */
@@ -859,7 +848,7 @@ button {
         <!-- top.jpg -->
         <div class="image-wrap top-image">
             <img
-                src="images/top.jpg"
+                src="クイズ内写真/top.jpg"
                 alt="新郎新婦の写真"
                 onerror="handleImageError(this)"
             >
@@ -1044,11 +1033,6 @@ button {
                 class="answer-status"
             ></div>
 
-            <h3
-                id="answerTitle"
-                class="answer-title"
-            ></h3>
-
             <p
                 id="correctAnswer"
                 class="correct-answer"
@@ -1153,7 +1137,7 @@ button {
             class="image-wrap result-image"
         >
             <img
-                src="images/result.jpg"
+                src="クイズ内写真/result.jpg"
                 alt="新郎新婦からのメッセージ画像"
                 onerror="handleBasicResultImageError(this)"
             >
@@ -1248,7 +1232,7 @@ button {
         >
 
             <img
-                src="images/clear.jpg"
+                src="クイズ内写真/clear.jpg"
                 alt="応用編全問正解のお祝い画像"
                 onerror="handleClearImageError(this)"
             >
@@ -1315,7 +1299,7 @@ const quizData = [
         explanation:
             "正解はポケモン！子どもの頃から好きで、今でもゲーム、カード、ユナイトと色々なポケモンを遊んでいます。",
 
-        image: "images/q1.jpg"
+        image: "クイズ内写真/q1.jpg"
     },
 
 
@@ -1334,7 +1318,7 @@ const quizData = [
         explanation:
             "正解はディズニー！式の中にもディズニー要素が隠れていますのでお楽しみに！",
 
-        image: "images/q2.jpg"
+        image: "クイズ内写真/q2.jpg"
     },
 
 
@@ -1353,7 +1337,7 @@ const quizData = [
         explanation:
             "新婦が群馬県庁に転職し、同じ所属に配属になったことをきっかけに同い年・お酒も好きで気が合うことから、一緒に遊びに行くようになりました。",
 
-        image: "images/q3.jpg"
+        image: "クイズ内写真/q3.jpg"
     },
 
 
@@ -1372,7 +1356,7 @@ const quizData = [
         explanation:
             "正解は10月4日です！\n当日は皆さまとお会いできることを楽しみにしています。",
 
-        image: "images/q4.jpg"
+        image: "クイズ内写真/q4.jpg"
     },
 
 
@@ -1397,7 +1381,7 @@ const quizData = [
         explanation:
             "どれも私たちがゲストの皆さまに楽しんでいただきたいことです！\n美味しい料理やお酒を楽しみながら、久しぶりの再会や会場の演出もぜひお楽しみください。\nまた、会場内には2人の好きなポケモンやディズニーのモチーフをたくさん散りばめています。\nぜひ会場を見渡しながら楽しんでください！",
 
-        image: "images/q5.jpg"
+        image: "クイズ内写真/q5.jpg"
     }
 
 ];
@@ -1415,7 +1399,7 @@ const appliedQuizData = [
         choices: ["ゴンベ", "ゲンガー", "ジラーチ", "ポッチャマ"],
         correct: 0,
         explanation: "新郎の一番好きなポケモンはゴンベで、2番目はポッチャマです",
-        image: "images/ex1.jpg"
+        image: "クイズ内写真/ex1.jpg"
     },
     {
         id: 2,
@@ -1424,7 +1408,7 @@ const appliedQuizData = [
         choices: ["赤・緑", "金", "ルビー", "パール"],
         correct: 0,
         explanation: "いとこ・兄の影響で赤緑からやっている生粋のポケモントレーナーです",
-        image: "images/ex2.jpg"
+        image: "クイズ内写真/ex2.jpg"
     },
     {
         id: 3,
@@ -1433,7 +1417,7 @@ const appliedQuizData = [
         choices: ["ポッチャマ", "アチャモ", "ピカチュウ", "イーブイ"],
         correct: 0,
         explanation: "ポッチャマは初めての車からずっと乗せています、最近メッソンも仲間入りしました",
-        image: "images/ex3.jpg"
+        image: "クイズ内写真/ex3.jpg"
     },
     {
         id: 4,
@@ -1442,7 +1426,7 @@ const appliedQuizData = [
         choices: ["パピモッチ", "ライボルト", "ハリーセン", "イーユイ"],
         correct: 0,
         explanation: "926はパピモッチです。他のポケモンはハリーセン（211　結婚記念日）・ライボルト（310　新郎の誕生日）・イーユイ（1004　結婚式）となっていました",
-        image: "images/ex4.jpg"
+        image: "クイズ内写真/ex4.jpg"
     },
     {
         id: 5,
@@ -1451,7 +1435,7 @@ const appliedQuizData = [
         choices: ["ヤドン", "コイキング", "ジラーチ", "ピカチュウ"],
         correct: 0,
         explanation: "正解はヤドンです。コイキング（金）はしゃちほこモチーフで名古屋、ジラーチは仙台七夕モチーフで仙台にゆかりがあります",
-        image: "images/ex5.jpg"
+        image: "クイズ内写真/ex5.jpg"
     },
     {
         id: 6,
@@ -1460,7 +1444,7 @@ const appliedQuizData = [
         choices: ["兄", "新婦", "いとこ", "1人で行った"],
         correct: 0,
         explanation: "兄と2人で行きました、兄弟で会えばいまだにポケモントークをずっとしています",
-        image: "images/ex6.jpg"
+        image: "クイズ内写真/ex6.jpg"
     },
     {
         id: 7,
@@ -1469,7 +1453,7 @@ const appliedQuizData = [
         choices: ["インテレオン", "黒馬バドレックス", "ムゲンダイナ", "連撃ウーラオス"],
         correct: 0,
         explanation: "採用理由はインテレオン愛、その他は当時強かったデッキタイプです",
-        image: "images/ex7.jpg"
+        image: "クイズ内写真/ex7.jpg"
     },
     {
         id: 8,
@@ -1477,8 +1461,8 @@ const appliedQuizData = [
         question: "新婦が一番好きなポケモンの映画は",
         choices: ["七夜の願い星ジラーチ", "セレビィ時を超えた遭遇", "ミュウツーの逆襲", "ギラティナと氷空の花束シェイミ"],
         correct: 0,
-        explanation: "配布のジラーチが欲しくて2回見に行きました",
-        image: "images/ex8.jpg"
+        explanation: "配布のジラーチが欲しくて2回見に行きました、絵は新婦作です",
+        image: "クイズ内写真/ex8.jpg"
     },
     {
         id: 9,
@@ -1487,7 +1471,7 @@ const appliedQuizData = [
         choices: ["水の都の護神ラティアスとラティオス", "ルギア爆誕", "裂空の訪問者デオキシス", "ディアルガvsパルキアvsダークライ"],
         correct: 0,
         explanation: "ラティオス・ラティアスの映画の影響で新婚旅行にヴェネツィアに行きたいと新婦に交渉中です",
-        image: "images/ex9.jpg"
+        image: "クイズ内写真/ex9.jpg"
     },
     {
         id: 10,
@@ -1496,7 +1480,7 @@ const appliedQuizData = [
         choices: ["チシャ猫", "とんすけ", "プーさん", "チップとデール"],
         correct: 0,
         explanation: "一番好きなキャラクターはチシャ猫です、バンビシリーズのとんすけも好きで悩みます。",
-        image: "images/ex10.jpg"
+        image: "クイズ内写真/ex10.jpg"
     },
     {
         id: 11,
@@ -1505,16 +1489,16 @@ const appliedQuizData = [
         choices: ["リトル・マーメイド", "塔の上のラプンツェル", "不思議の国のアリス", "美女と野獣"],
         correct: 0,
         explanation: "なぜリトル・マーメイドかは当日明らかに・・・？",
-        image: "images/ex11.jpg"
+        image: "クイズ内写真/ex11.jpg"
     },
     {
         id: 12,
         category: "ディズニー",
         question: "新婦のディズニーの楽しみ方は？",
         choices: ["アトラクションとパレード", "パレードと食事", "アトラクションと食事", "ビール"],
-        correct: 0,
+        correct: 2,
         explanation: "アトラクションとことん、食事の時間も大切に。。夜のパレードも好きですが、昼は見てません（笑）最近、シーもランドもビールが飲めるのがうれしい",
-        image: "images/ex12.jpg"
+        image: "クイズ内写真/ex12.jpg"
     },
     {
         id: 13,
@@ -1523,7 +1507,7 @@ const appliedQuizData = [
         choices: ["パリ", "上海", "香港", "フロリダ"],
         correct: 0,
         explanation: "上海ディズニー、香港ディズニーは友達と一緒に、フロリダは小学生の時に母と行きました！新婚旅行でパリディズニーに行きたいな",
-        image: "images/ex13.jpg"
+        image: "クイズ内写真/ex13.jpg"
     },
     {
         id: 14,
@@ -1532,7 +1516,7 @@ const appliedQuizData = [
         choices: ["ミッキーたちが近づいてきて大泣き", "ミッキーたちが近づいてきて大興奮", "ずーっと眠ってました", "無反応"],
         correct: 0,
         explanation: "初ディズニーは大泣きですが、今は満面笑顔です",
-        image: "images/ex14.jpg"
+        image: "クイズ内写真/ex14.jpg"
     },
     {
         id: 15,
@@ -1541,7 +1525,7 @@ const appliedQuizData = [
         choices: ["ディズニーランドホテル", "シンデレラ城", "ミラコスタ", "ディズニーシーのゴンドラ"],
         correct: 0,
         explanation: "新婦の好きなアリスモチーフの部屋でサプライズでした",
-        image: "images/ex15.jpg"
+        image: "クイズ内写真/ex15.jpg"
     },
     {
         id: 16,
@@ -1550,7 +1534,7 @@ const appliedQuizData = [
         choices: ["うきわまん", "ギョウザドッグ", "スモークターキーレッグ", "ポークライスロール"],
         correct: 0,
         explanation: "会場のどこかにうきわまんの紙で作った折り鶴が置いてあるかも・・・？",
-        image: "images/ex16.jpg"
+        image: "クイズ内写真/ex16.jpg"
     },
     {
         id: 17,
@@ -1559,7 +1543,7 @@ const appliedQuizData = [
         choices: ["美女と野獣", "リトルマーメイド", "アナ雪", "アラジン"],
         correct: 0,
         explanation: "美女と野獣のミュージカルを一緒に見に行きました！アニメや映画とは違う面白さがありますよね",
-        image: "images/ex17.jpg"
+        image: "クイズ内写真/ex17.jpg"
     },
     {
         id: 18,
@@ -1568,7 +1552,7 @@ const appliedQuizData = [
         choices: ["南国でゆっくり牛を見ながら過ごしたい", "カフェを開きたい", "フルマラソンを完走したい", "畑をしながらスローライフを送りたい"],
         correct: 0,
         explanation: "牛をゆっくり見るなら黒島がおススメです",
-        image: "images/ex18.jpg"
+        image: "クイズ内写真/ex18.jpg"
     },
     {
         id: 19,
@@ -1577,7 +1561,7 @@ const appliedQuizData = [
         choices: ["雪男", "晴れ男", "雨男", "嵐を呼ぶ男"],
         correct: 0,
         explanation: "イベントごとや仙台に行くときによく発動します。生まれた日や高校・大学受験、両家顔合わせの日も雪が降りました。当日は晴れてくれ・・・！！",
-        image: "images/ex19.jpg"
+        image: "クイズ内写真/ex19.jpg"
     },
     {
         id: 20,
@@ -1586,7 +1570,7 @@ const appliedQuizData = [
         choices: ["土方歳三", "安倍晴明", "武蔵坊弁慶", "真田幸村"],
         correct: 0,
         explanation: "新選組めぐりをたくさんしてきました、これからもいろんな新選組ゆかりの場所に旅行に行きたいな",
-        image: "images/ex20.jpg"
+        image: "クイズ内写真/ex20.jpg"
     },
     {
         id: 21,
@@ -1595,7 +1579,7 @@ const appliedQuizData = [
         choices: ["伊香保温泉の夜景", "おススメのごはん屋さん", "映画館", "ジャグリングの練習場"],
         correct: 0,
         explanation: "以降、イベントの節目節目で伊香保温泉にいってます",
-        image: "images/ex21.jpg"
+        image: "クイズ内写真/ex21.jpg"
     },
     {
         id: 22,
@@ -1604,7 +1588,7 @@ const appliedQuizData = [
         choices: ["新婦がお湯の蛇口を強く押しすぎて止まらなくなった", "新郎の残金が不足して新婦が払った", "新婦が派手に転んでけがした", "新郎が服に醤油をこぼしてデートの予定を変更し家に帰った"],
         correct: 0,
         explanation: "緊張していて力の入れ具合を間違えたそうです（笑）",
-        image: "images/ex22.jpg"
+        image: "クイズ内写真/ex22.jpg"
     },
     {
         id: 23,
@@ -1613,7 +1597,7 @@ const appliedQuizData = [
         choices: ["一緒", "新郎", "新婦", "ほぼ外食"],
         correct: 0,
         explanation: "料理は一緒に作ることが多いです！他の家事もだいたい分担・・・？",
-        image: "images/ex23.jpg"
+        image: "クイズ内写真/ex23.jpg"
     },
     {
         id: 24,
@@ -1622,7 +1606,7 @@ const appliedQuizData = [
         choices: ["新郎", "新婦", "一緒", "専門業者"],
         correct: 0,
         explanation: "新郎が生成AIを使って作りました、かがくのちからってすげー",
-        image: "images/ex24.jpg"
+        image: "クイズ内写真/ex24.jpg"
     },
     {
         id: 25,
@@ -1631,7 +1615,7 @@ const appliedQuizData = [
         choices: ["ジャグリング", "パズル", "マジック", "ルービックキューブ"],
         correct: 0,
         explanation: "新郎の趣味はジャグリングです、高校生の全国大会で審査員・ゲストステージもしたことがあります",
-        image: "images/ex25.jpg"
+        image: "クイズ内写真/ex25.jpg"
     },
     {
         id: 26,
@@ -1640,7 +1624,7 @@ const appliedQuizData = [
         choices: ["ゼルダ無双", "リングフィットアドベンチャー", "桃鉄", "薄桜鬼"],
         correct: 0,
         explanation: "ゼルダ無双やブレワイ、ティアキンはめちゃくちゃハマった思い出です",
-        image: "images/ex26.jpg"
+        image: "クイズ内写真/ex26.jpg"
     },
     {
         id: 27,
@@ -1649,7 +1633,7 @@ const appliedQuizData = [
         choices: ["おじいちゃん", "としさん", "とち", "とってぃ"],
         correct: 0,
         explanation: "最近はなぜかおじいちゃん呼びが多いです",
-        image: "images/ex27.jpg"
+        image: "クイズ内写真/ex27.jpg"
     },
     {
         id: 28,
@@ -1658,7 +1642,7 @@ const appliedQuizData = [
         choices: ["10月4日", "9月27日", "10月11日", "10月18日"],
         correct: 0,
         explanation: "正解は「10月4日」です。当日は皆さまとお会いできることを楽しみにしています！",
-        image: "images/ex28.jpg"
+        image: "クイズ内写真/ex28.jpg"
     },
     {
         id: 29,
@@ -1667,7 +1651,7 @@ const appliedQuizData = [
         choices: ["10:45", "11:15", "12:45", "15:00"],
         correct: 0,
         explanation: "集合は10時45分です。挙式の開始が11時15分、披露宴の開始が12時45分、終了予定時刻が15時頃です",
-        image: "images/ex29.jpg"
+        image: "クイズ内写真/ex29.jpg"
     },
     {
         id: 30,
@@ -1676,7 +1660,7 @@ const appliedQuizData = [
         choices: ["石の教会", "水の教会", "草の教会", "炎の教会"],
         correct: 0,
         explanation: "正解は「石の教会」です、ほかの選択肢もどこかにありそうですね",
-        image: "images/ex30.jpg"
+        image: "クイズ内写真/ex30.jpg"
     }
 ];
 
@@ -2202,9 +2186,6 @@ function showAnswer(isCorrect) {
     const status =
         document.getElementById("answerStatus");
 
-    const title =
-        document.getElementById("answerTitle");
-
     const correctAnswer =
         document.getElementById("correctAnswer");
 
@@ -2216,54 +2197,36 @@ function showAnswer(isCorrect) {
 
 
     /*
-     * Q5専用の正解表示
+     * 回答結果
+     *
+     * 正解：✓ 正解！
+     * 不正解：残念…
+     *
+     * その下に「A：○○」を表示。
+     * 以前あった「正解！／正解は…」の2行目は表示しない。
      */
+    status.textContent = isCorrect
+        ? "✓ 正解！"
+        : "残念…";
 
-    const isAllCorrect =
-        currentMode === "basic" &&
-        currentQuestion.specialCorrect === "all";
-
-
-    if (isCorrect) {
-
-        status.textContent =
-            "✓ 正解！";
-
-        status.className =
-            "answer-status correct";
-
-        if (isAllCorrect) {
-
-            title.textContent =
-                "正解！どれを選んでも大正解です！";
-
-        } else {
-
-            title.textContent =
-                "正解！";
-        }
-
-    } else {
-
-        status.textContent =
-            "残念…";
-
-        status.className =
-            "answer-status incorrect";
-
-        title.textContent =
-            "正解は…";
-    }
+    status.className =
+        isCorrect
+            ? "answer-status correct"
+            : "answer-status incorrect";
 
 
     /*
      * 正解表示
+     * Q5は全選択肢正解なので、A欄も専用表示。
      */
+    const isAllCorrect =
+        currentMode === "basic" &&
+        currentQuestion.specialCorrect === "all";
 
     if (isAllCorrect) {
 
         correctAnswer.innerHTML =
-            "どの選択肢も<strong>正解！</strong>";
+            "A：<strong>どれを選んでも大正解です！</strong>";
 
     } else {
 
@@ -2274,27 +2237,23 @@ function showAnswer(isCorrect) {
                     currentQuestion.correct
             );
 
-
         correctAnswer.innerHTML =
-            `正解：<strong>${escapeHtml(correctChoice.text)}</strong>`;
+            `A：<strong>${escapeHtml(correctChoice.text)}</strong>`;
     }
 
 
     /*
      * 解説文章
      */
-
     explanation.textContent =
         currentQuestion.explanation || "";
 
 
     /*
      * 解説画像
-     *
-     * 問題文の上には表示せず、
-     * 解説文章の「上」に表示。
+     * 問題文・選択肢の上ではなく、
+     * 「A：○○」の下、解説文章の上に表示。
      */
-
     renderAnswerImage(
         currentQuestion.image
     );
@@ -2303,23 +2262,17 @@ function showAnswer(isCorrect) {
     /*
      * 次ボタン
      */
-
     const isLast =
         currentQuestionIndex ===
         currentQuizData.length - 1;
 
-
     const nextButton =
         document.getElementById("nextQuestionButton");
 
-
     if (isLast) {
-
         nextButton.textContent =
             "結果を見る";
-
     } else {
-
         nextButton.textContent =
             "次の問題へ";
     }
@@ -2328,14 +2281,12 @@ function showAnswer(isCorrect) {
     /*
      * 同じページ内で回答エリアを表示
      */
-
     answerArea.style.display = "block";
 
 
     /*
      * 解説部分まで軽くスクロール
      */
-
     setTimeout(() => {
 
         answerArea.scrollIntoView({
@@ -2345,7 +2296,6 @@ function showAnswer(isCorrect) {
 
     }, 100);
 }
-
 
 /* =========================================================
    次の問題
