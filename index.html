@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<meta name="color-scheme" content="light">
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
@@ -12,6 +14,21 @@
 
 
 <style>
+    /* ダークモード固定：結婚式クイズは常にライトテーマで表示 */
+    :root {
+        color-scheme: light;
+    }
+
+    html {
+        color-scheme: light;
+        background-color: #fffaf7;
+    }
+
+    body {
+        background-color: #fffaf7 !important;
+        color: #4d4642 !important;
+    }
+
 * {
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
@@ -1188,7 +1205,7 @@ button {
 
             <p class="unlock-text">
                 さらに新郎新婦のことを知りたい人向けの応用編を用意しました！<br>
-                よかったらぜひ挑戦してみてください！
+                ランダムに5問出題されるのでよかったらぜひ挑戦してみてください！
             </p>
 
         </div>
