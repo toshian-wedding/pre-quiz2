@@ -907,7 +907,57 @@ button {
         }
     }
 
+
+
+    /* =========================================================
+       ダークモード完全固定（最優先）
+       このページは結婚式用のライトテーマとして表示する
+    ========================================================= */
+    :root {
+        color-scheme: only light !important;
+        forced-color-adjust: none !important;
+    }
+
+    html,
+    body,
+    .app {
+        color-scheme: only light !important;
+        forced-color-adjust: none !important;
+        background-color: #faf8f5 !important;
+        background-image: none !important;
+        color: #4d4642 !important;
+    }
+
+    html {
+        min-height: 100% !important;
+    }
+
+    body {
+        min-height: 100vh !important;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root,
+        html,
+        body,
+        .app {
+            color-scheme: only light !important;
+            forced-color-adjust: none !important;
+            background-color: #faf8f5 !important;
+            background-image: none !important;
+            color: #4d4642 !important;
+        }
+
+        .card,
+        .choice-btn,
+        .btn-secondary {
+            forced-color-adjust: none !important;
+        }
+    }
+
 </style>
+<meta name="theme-color" content="#faf8f5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#faf8f5" media="(prefers-color-scheme: dark)">
 </head>
 
 <body>
